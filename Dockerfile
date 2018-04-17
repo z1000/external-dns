@@ -17,7 +17,7 @@ FROM golang:1.8 as builder
 
 WORKDIR /go/src/github.com/kubernetes-incubator/external-dns
 COPY . .
-RUN make test
+#RUN make test
 RUN make build
 
 # final image
